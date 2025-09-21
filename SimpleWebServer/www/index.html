@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+<center> 
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <img src="images/java.png" width="500" style="animation: spin 2s linear infinite;" alt="Java logo spinning in the center of a plain white background, conveying a dynamic and energetic tone">
+</div>
+<br>
+<button onclick="playMusic()">Play Music</button>
+
+<audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+function playMusic() {
+    document.getElementById('bg-music').play();
+}
+</script>
+</center>
+
+<style>
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+</style>
+
+</body>
+</html>
